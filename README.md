@@ -118,10 +118,8 @@ I also alias this in my shell for convenience:
 alias textgen='cd ~/projects/textgen && source venv/bin/activate && python server.py --model mistral-7b-instruct --load-in-4bit --gpu-memory 9 --api'
 ```
 
+> **Tip:** Add the alias to `~/.bashrc` or `~/.zshrc` so it persists across sessions.
+
 ## Contributing
 
-Pull requests are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting.
-
-## License
-
-AGPL-3.0. See [LICENSE](LICENSE) for details.
+This is a personal fork — I don't actively accept PRs, but feel free to open an issue if you spot something broken.
