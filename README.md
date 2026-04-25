@@ -112,6 +112,12 @@ python server.py --model mistral-7b-instruct --load-in-4bit --gpu-memory 9 --api
 > **Note:** I've found that `--gpu-memory 9` is the sweet spot for the 3080 — going higher risks OOM errors
 > when the context gets long. If you have a 3080 Ti (12GB), you can probably push to `--gpu-memory 11`.
 
+I also alias this in my shell for convenience:
+
+```bash
+alias textgen='cd ~/projects/textgen && source venv/bin/activate && python server.py --model mistral-7b-instruct --load-in-4bit --gpu-memory 9 --api'
+```
+
 ## Contributing
 
 Pull requests are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting.
