@@ -101,6 +101,14 @@ python server.py --extensions openai multimodal
 docker compose up --build
 ```
 
+## My Setup
+
+I run this on a machine with a single RTX 3080 (10GB VRAM). The flags I typically use:
+
+```bash
+python server.py --model mistral-7b-instruct --load-in-4bit --gpu-memory 9 --api
+```
+
 ## Contributing
 
 Pull requests are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting.
